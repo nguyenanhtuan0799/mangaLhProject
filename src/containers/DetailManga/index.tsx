@@ -46,7 +46,10 @@ const DetailManga = ({navigation, route}: Props) => {
         backgroundColor="mainBackground"
         borderTopColor="borderGray"
         borderTopWidth={0.5}
-        style={[commonStyles.shadowIOS, {paddingBottom: insets.bottom}]}
+        style={[
+          commonStyles.shadowIOS,
+          {paddingBottom: insets.bottom || theme.spacing.s},
+        ]}
         paddingHorizontal="l"
         flexDirection="row"
         paddingVertical="s"
@@ -109,6 +112,7 @@ const DetailManga = ({navigation, route}: Props) => {
               borderRadius: 20,
               height: 44,
               backgroundColor: theme.colors.borderGray,
+              marginBottom: theme.spacing.m,
             }}
             activeStyle={{
               borderRadius: 20,
@@ -140,7 +144,7 @@ const DetailManga = ({navigation, route}: Props) => {
           <PagerView
             ref={refPage}
             initialPage={activeTab}
-            style={{flex: 1, width: '100%', marginTop: theme.spacing.s}}
+            style={{flex: 1, width: '100%'}}
             onPageSelected={e => {
               refSegment?.current?.updateActive(e.nativeEvent.position);
             }}>
