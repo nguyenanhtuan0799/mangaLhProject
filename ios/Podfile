@@ -27,6 +27,7 @@ target 'mangaLhProject' do
   # Flags change depending on the env values.
   flags = get_default_flags()
 
+  # use_frameworks! :linkage => :static
   use_react_native!(
     :path => config[:reactNativePath],
     # Hermes is now enabled by default. Disable by setting this flag to false.
@@ -42,13 +43,18 @@ target 'mangaLhProject' do
     # An absolute path to your application root.
     :app_path => "#{Pod::Config.instance.installation_root}/.."
   )
-
-  target 'mangaLhProjectTests' do
+  target 'mangaLhProjectStaging' do
     inherit! :complete
-    # Pods for testing
   end
 
+ 
+
   post_install do |installer|
+    installer.pods_project.targets.each do |target|
+      target.build_configurations.each do |config|
+        config.build_settings['EXCLUDED_ARCHS[sdk=iphonesimulator*]'] = "arm64"
+      end
+    end
     react_native_post_install(
       installer,
       # Set `mac_catalyst_enabled` to `true` in order to apply patches
