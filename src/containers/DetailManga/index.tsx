@@ -21,7 +21,7 @@ type Props = {
 
 const DetailManga = ({navigation, route}: Props) => {
   const {chapter, id, imageUrl, name, slug, time} = route?.params;
-  const segments = [{label: 'Thông Tin Truyện'}, {label: 'Danh Sách Chapter'}];
+  const segments = [{label: 'Thông Tin Truyện'}, {label: 'Danh Sách Chương'}];
   const {listChapter, ...rest} = detailManga;
 
   // const pageViews = [
