@@ -8,12 +8,12 @@ import RootNavigation, {
 } from './navigation/RootNavigation';
 import {ThemeProvider} from './themes/theme';
 import LayoutPaddingStatus from './layouts/LayoutPaddingStatus';
-import SplashScreen from 'react-native-splash-screen';
+// import SplashScreen from 'react-native-splash-screen';
 
 const EntryPoint = () => {
   const routeNameRef: any = React.useRef();
   useEffect(() => {
-    SplashScreen.hide();
+    // SplashScreen.hide();
   }, []);
 
   return (
