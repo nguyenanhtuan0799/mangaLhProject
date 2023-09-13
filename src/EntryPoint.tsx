@@ -1,5 +1,5 @@
 import {NavigationContainer} from '@react-navigation/native';
-import React from 'react';
+import React, {useEffect} from 'react';
 import {StatusBar} from 'react-native';
 import {SafeAreaProvider, SafeAreaView} from 'react-native-safe-area-context';
 import RootNavigation, {
@@ -8,9 +8,13 @@ import RootNavigation, {
 } from './navigation/RootNavigation';
 import {ThemeProvider} from './themes/theme';
 import LayoutPaddingStatus from './layouts/LayoutPaddingStatus';
+import SplashScreen from 'react-native-splash-screen';
 
 const EntryPoint = () => {
   const routeNameRef: any = React.useRef();
+  useEffect(() => {
+    SplashScreen.hide();
+  }, []);
 
   return (
     <SafeAreaProvider>

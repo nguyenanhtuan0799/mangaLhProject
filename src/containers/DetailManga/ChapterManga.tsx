@@ -1,14 +1,16 @@
-import React, {useCallback, useMemo, useState} from 'react';
+import React, {useCallback, useState} from 'react';
 import {Box, Text} from '../../themes/theme';
 import {chapter} from '../../types/data';
 import {FlatList, ListRenderItem, TouchableOpacity} from 'react-native';
 import {upperCaseFirst} from '../../utils/string';
+import {navigate} from '../../navigation/RootNavigation';
 
 type Props = {
   data: chapter[];
+  slug: string;
 };
 
-const ChapterManga = ({data}: Props) => {
+const ChapterManga = ({data, slug}: Props) => {
   const [sortMangaNew, setSortMangaNew] = useState<boolean>(false);
 
   const handleClickSortOld = () => {
@@ -19,8 +21,17 @@ const ChapterManga = ({data}: Props) => {
   };
 
   const renderItem: ListRenderItem<chapter> = useCallback(({item, index}) => {
+    const handleClickReadChapter = (item: chapter) => {
+      navigate('ViewChapterManga', {
+        slug: slug,
+        pathChapter: item?.pathChapter,
+      });
+    };
     return (
-      <TouchableOpacity>
+      <TouchableOpacity
+        onPress={() => {
+          handleClickReadChapter(item);
+        }}>
         <Box
           paddingVertical="s"
           borderTopWidth={0.8}

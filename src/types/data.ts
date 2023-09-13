@@ -18,6 +18,7 @@ export interface informationManga {
   id: string;
   imageUrl: string;
   name: string;
+  slug: string;
   infoDetail: {
     subName: string;
     category: {

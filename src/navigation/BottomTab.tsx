@@ -11,8 +11,6 @@ import {getFocusedRouteNameFromRoute} from '@react-navigation/native';
 import {useTheme} from '../themes/theme';
 import HomeStack from './stacks/HomeStack';
 
-type Props = {};
-
 const tabBarArr = [
   {
     name: 'Trang chủ',
@@ -52,12 +50,12 @@ const tabBarArr = [
   },
 ];
 
-const BottomTab = (props: Props) => {
+const BottomTab = () => {
   const theme = useTheme();
 
   const getTabBarVisibility = (route: any) => {
     const routeName = getFocusedRouteNameFromRoute(route);
-    const hideOnScreens: any = [];
+    const hideOnScreens: string[] = ['DetailManga', 'ViewChapterManga'];
 
     if (hideOnScreens.indexOf(routeName || '') > -1) {
       return 'none';

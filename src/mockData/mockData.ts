@@ -218,6 +218,7 @@ export const detailManga = {
     actor: 'Maybe',
     status: 'Đang tiến hành',
   },
+  slug: 'kekkon-yubiwa-monogatari',
   infoStatic: {
     time: '2 tháng',
     review: '5 /5',

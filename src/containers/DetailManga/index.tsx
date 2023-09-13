@@ -11,8 +11,9 @@ import InformationManga from './InformationManga';
 import ChapterManga from './ChapterManga';
 import {detailManga} from '../../mockData/mockData';
 import Feather from 'react-native-vector-icons/Feather';
-import {SafeAreaView, TouchableOpacity} from 'react-native';
+import {TouchableOpacity} from 'react-native';
 import {useSafeAreaInsets} from 'react-native-safe-area-context';
+import {navigate} from '../../navigation/RootNavigation';
 
 type Props = {
   navigation: NavigationType;
@@ -40,6 +41,13 @@ const DetailManga = ({navigation, route}: Props) => {
   const refSegment = useRef<any>();
   const insets = useSafeAreaInsets();
 
+  const handleClickReadManga = () => {
+    navigate('ViewChapterManga', {
+      slug: detailManga?.slug,
+      pathChapter: detailManga?.listChapter[0]?.pathChapter,
+    });
+  };
+
   const renderButtonRead = () => {
     return (
       <Box
@@ -61,7 +69,7 @@ const DetailManga = ({navigation, route}: Props) => {
             {rest?.infoStatic?.view}
           </Text>
         </Box>
-        <TouchableOpacity>
+        <TouchableOpacity onPress={handleClickReadManga}>
           <Box
             backgroundColor="mainButton"
             borderRadius="m"
@@ -152,7 +160,7 @@ const DetailManga = ({navigation, route}: Props) => {
               <InformationManga data={rest} listChapter={listChapter} />
             </Box>
             <Box key={2} flex={1}>
-              <ChapterManga data={listChapter} />
+              <ChapterManga data={listChapter} slug={detailManga?.slug} />
             </Box>
           </PagerView>
         </Box>

@@ -6,10 +6,10 @@ import {goBack} from '../navigation/RootNavigation';
 
 type Props = {
   text: string;
-  component?: ReactNode;
+  rightComponent?: ReactNode;
 };
 
-const HeaderGoBack = ({text, component}: Props) => {
+const HeaderGoBack = ({text, rightComponent}: Props) => {
   const theme = useTheme();
   const handleClickGoBack = () => {
     goBack();
@@ -32,7 +32,7 @@ const HeaderGoBack = ({text, component}: Props) => {
           {text}
         </Text>
       </Box>
-      <Box width={20}>{component}</Box>
+      <Box width={20}>{rightComponent}</Box>
     </Box>
   );
 };
