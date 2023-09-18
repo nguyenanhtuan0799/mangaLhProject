@@ -40,3 +40,19 @@ export interface informationManga {
 export interface detailManga extends informationManga {
   listChapter: chapter[];
 }
+export type imgContents = {
+  id: string;
+  img: string;
+};
+
+export interface contentChapter {
+  name: string;
+  slug: string;
+  chapter: string;
+  pathChapter: string;
+  imgContents: imgContents[];
+  listChapter: {
+    name: string;
+    pathChapter: string;
+  }[];
+}

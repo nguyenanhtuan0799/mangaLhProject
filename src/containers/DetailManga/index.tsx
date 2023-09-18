@@ -11,7 +11,7 @@ import InformationManga from './InformationManga';
 import ChapterManga from './ChapterManga';
 import {detailManga} from '../../mockData/mockData';
 import Feather from 'react-native-vector-icons/Feather';
-import {TouchableOpacity} from 'react-native';
+import {TouchableOpacity, TouchableWithoutFeedback} from 'react-native';
 import {useSafeAreaInsets} from 'react-native-safe-area-context';
 import {navigate} from '../../navigation/RootNavigation';
 
@@ -69,7 +69,7 @@ const DetailManga = ({navigation, route}: Props) => {
             {rest?.infoStatic?.view}
           </Text>
         </Box>
-        <TouchableOpacity onPress={handleClickReadManga}>
+        <TouchableWithoutFeedback onPress={handleClickReadManga}>
           <Box
             backgroundColor="mainButton"
             borderRadius="m"
@@ -82,7 +82,7 @@ const DetailManga = ({navigation, route}: Props) => {
               Đọc {listChapter.length >= 1 && listChapter[0]?.name}
             </Text>
           </Box>
-        </TouchableOpacity>
+        </TouchableWithoutFeedback>
       </Box>
     );
   };

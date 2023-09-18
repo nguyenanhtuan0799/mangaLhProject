@@ -745,3 +745,142 @@ export const detailManga = {
     },
   ],
 };
+
+export const contentChapter = {
+  name: 'Kimi Wa Nina Janai!',
+  slug: 'kimi-wa-nina-janai',
+  chapter: 'Chapter 1.1',
+  pathChapter: 'chapter-1-1-32',
+  imgContents: [
+    {
+      id: '2c630fee-17bf-4079-886f-7896133d6075',
+      img: 'https://cdn4.lhmanga.com/Store/Manga/0001_5d4321b826311.jpg',
+    },
+    {
+      id: '458919c2-0305-4217-ba3c-466c05a2c81a',
+      img: 'https://cdn4.lhmanga.com/Store/Manga/001_5d4321b98e745.jpg',
+    },
+    {
+      id: 'ffcc4c0d-e7f0-46c6-811a-2d557dbdd04f',
+      img: 'https://cdn4.lhmanga.com/Store/Manga/002+3_5d4321baab913.jpg',
+    },
+    {
+      id: '6fca50ac-105f-448b-9372-088f77b80d4e',
+      img: 'https://cdn4.lhmanga.com/Store/Manga/004_5d4321bb2b2ad.jpg',
+    },
+    {
+      id: '7b13862d-e06d-4441-b05a-e9472b5eaf18',
+      img: 'https://cdn4.lhmanga.com/Store/Manga/005_5d4321bc62ba2.jpg',
+    },
+    {
+      id: 'fb792485-fd83-4e2f-aeff-21b272ee8415',
+      img: 'https://cdn4.lhmanga.com/Store/Manga/006_5d4321bdb8e9a.jpg',
+    },
+    {
+      id: 'db960dc3-fa44-4b23-a0a6-c29adecbdff8',
+      img: 'https://cdn4.lhmanga.com/Store/Manga/007_5d4321be2ed99.jpg',
+    },
+    {
+      id: 'f2565f39-62ab-4aa4-a5b2-aa2ac540498b',
+      img: 'https://cdn4.lhmanga.com/Store/Manga/008_5d4321bea7eb7.jpg',
+    },
+    {
+      id: '2a8cb630-2e9e-4c31-b514-5a9351d2b1a0',
+      img: 'https://cdn4.lhmanga.com/Store/Manga/009_5d4321bf1ad1d.jpg',
+    },
+    {
+      id: '8d69f6d8-781c-4e5e-8187-a17465556a6d',
+      img: 'https://cdn4.lhmanga.com/Store/Manga/010_5d4321bf88c62.jpg',
+    },
+    {
+      id: 'b9ac72e1-f890-43c5-a576-5f6308804839',
+      img: 'https://cdn4.lhmanga.com/Store/Manga/011_5d4321bfef524.jpg',
+    },
+    {
+      id: 'fa9145d8-5435-4eed-b09e-b901eec48c33',
+      img: 'https://cdn4.lhmanga.com/Store/Manga/012_5d4321c05b6ef.jpg',
+    },
+    {
+      id: '1cc7da31-cfac-4f9c-bbba-5715508a8f20',
+      img: 'https://cdn4.lhmanga.com/Store/Manga/013_5d4321c0c1f95.jpg',
+    },
+    {
+      id: '9fd03110-2ee6-456e-8763-6c44c25ab78a',
+      img: 'https://cdn4.lhmanga.com/Store/Manga/014_5d4321c15fc1e.jpg',
+    },
+    {
+      id: '930e738b-3cb0-4b9d-bf5e-d9b0203eada3',
+      img: 'https://cdn4.lhmanga.com/Store/Manga/015_5d4321c1d65b4.jpg',
+    },
+    {
+      id: 'a952a165-7576-4ba6-9326-00cd55f30d7f',
+      img: 'https://cdn4.lhmanga.com/Store/Manga/016_5d4321c257914.jpg',
+    },
+    {
+      id: '7799f74e-97dc-4638-b2f3-f95b40e48e4c',
+      img: 'https://cdn4.lhmanga.com/Store/Manga/017_5d4321c2d7218.jpg',
+    },
+    {
+      id: '817a5ce8-621c-493a-995d-e65f73fa6223',
+      img: 'https://cdn4.lhmanga.com/Store/Manga/9999999_5d4321c3c0594.jpg',
+    },
+    {
+      id: '3e400842-4466-4c36-bf07-cd5e3153e47e',
+      img: 'https://cdn1.lhmanga.com/Store/Manga/donate_6155db4eb4303.jpg',
+    },
+  ],
+  listChapter: [
+    {
+      name: 'Chapter 10',
+      pathChapter: 'chapter-10-597',
+    },
+    {
+      name: 'Chapter 9',
+      pathChapter: 'chapter-9-618',
+    },
+    {
+      name: 'Chapter 8',
+      pathChapter: 'chapter-8-643',
+    },
+    {
+      name: 'Chapter 7',
+      pathChapter: 'chapter-7-649',
+    },
+    {
+      name: 'Chapter 6',
+      pathChapter: 'chapter-6-660',
+    },
+    {
+      name: 'Chapter 5',
+      pathChapter: 'chapter-5-689',
+    },
+    {
+      name: 'Chapter 4',
+      pathChapter: 'chapter-4-672',
+    },
+    {
+      name: 'Chapter 3',
+      pathChapter: 'chapter-3-735',
+    },
+    {
+      name: 'Chapter 2.2',
+      pathChapter: 'chapter-2-2-30',
+    },
+    {
+      name: 'Chapter 2.1',
+      pathChapter: 'chapter-2-1-26',
+    },
+    {
+      name: 'Chapter 1.3',
+      pathChapter: 'chapter-1-3-6',
+    },
+    {
+      name: 'Chapter 1.2',
+      pathChapter: 'chapter-1-2-36',
+    },
+    {
+      name: 'Chapter 1.1',
+      pathChapter: 'chapter-1-1-32',
+    },
+  ],
+};

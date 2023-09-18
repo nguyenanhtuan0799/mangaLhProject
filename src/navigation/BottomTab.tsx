@@ -65,7 +65,11 @@ const BottomTab = () => {
   const Tab = createBottomTabNavigator();
 
   return (
-    <Tab.Navigator screenOptions={{headerShown: false}}>
+    <Tab.Navigator
+      screenOptions={{
+        headerShown: false,
+      }}
+      sceneContainerStyle={{backgroundColor: theme.colors.primaryColor}}>
       {tabBarArr?.map((item, index) => {
         return (
           <Tab.Screen

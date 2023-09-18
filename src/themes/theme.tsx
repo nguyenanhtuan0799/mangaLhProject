@@ -26,6 +26,8 @@ const palette = {
 
   grayDark1: '#cccccc',
   grayDark: '#f5f5f5',
+
+  yellowGrey: '#FFDE59',
 };
 
 const theme = createTheme({
@@ -43,6 +45,8 @@ const theme = createTheme({
     borderGray: palette.grayDark,
 
     mainButton: palette.redGray,
+
+    primaryColor: palette.yellowGrey,
   },
   spacing: {
     s: 8,
