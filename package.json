@@ -9,9 +9,10 @@
     "start": "react-native start",
     "test": "jest",
     "podm1": "cd ios && arch -x86_64 pod install",
-    "android-dev": "react-native run-android --variant=devDebug --appIdSuffix staging",
-    "android-dev-release": "react-native run-android --variant=devRelease --appIdSuffix release",
-    "android-release": "react-native run-android --variant=productRelease --appIdSuffix release",
+    "android-dev": "react-native run-android --variant=devDebug --appIdSuffix=debug",
+    "android-dev-release": "react-native run-android --variant=devRelease --appIdSuffix=release",
+    "android-product": "react-native run-android --variant=productDebug --appIdSuffix=debug",
+    "android-product-release": "react-native run-android --variant=productRelease --appIdSuffix=release",
     "ios-dev": "react-native run-ios --scheme \"mangaLhProjectStaging\" --simulator=\"iPhone 14 Pro\""
   },
   "dependencies": {
