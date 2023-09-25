@@ -56,3 +56,13 @@ export interface contentChapter {
     pathChapter: string;
   }[];
 }
+
+export interface mangaItemByCategory {
+  id: string;
+  chapter: string;
+  time: string;
+  name: string;
+  imageUrl: string;
+  isHot: boolean;
+  slug: string;
+}

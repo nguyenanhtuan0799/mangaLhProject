@@ -884,3 +884,36 @@ export const contentChapter = {
     },
   ],
 };
+
+export const LIST_MANGA_CATEGORY = [
+  {
+    id: '15b0f8c3-6d83-4b9c-824e-fb71b56e21a6',
+    chapter: 'Chap 4',
+    time: '6 năm',
+    name: 'Broken Moon',
+    imageUrl:
+      'https://1.bp.blogspot.com/-HflX2Rogk14/WdX4CAGnu1I/AAAAAAAIRWs/1k-z-CeBaHYu8FMmt6NaQIf3CET-ubI3wCHMYCw/s0/12122385_10208332138165947_1033971475800319124_n.jpg',
+    isHot: false,
+    slug: 'broken-moon',
+  },
+  {
+    id: '306fdf1d-cb29-4130-8c72-7b239a9b7165',
+    chapter: 'Chap 185',
+    time: '3 năm',
+    name: 'Cage Of Eden',
+    imageUrl:
+      'http://cdn4.lhmanga.com/Store/Manga/cage-of-eden_1552555583_5da28926bedee.jpg',
+    isHot: false,
+    slug: 'cage-of-eden',
+  },
+  {
+    id: '5893a529-aed8-49a3-b2ad-15eba61d680b',
+    chapter: 'Chapter 136',
+    time: '11 ngày',
+    name: 'Chainsaw-man',
+    imageUrl:
+      'http://cdn4.lhmanga.com/Store/Manga/Chainsaw-man_5c721ebf0c0be.jpg',
+    isHot: false,
+    slug: 'chainsaw-man',
+  },
+];
