@@ -6,7 +6,8 @@ type Props = {};
 const MangaItemByCategory = (props: Props) => {
   return (
     <Box>
-      <Text>MangaItemByCategory</Text>
+      <Box></Box>
+      <Box></Box>
     </Box>
   );
 };
